@@ -1,0 +1,166 @@
+@font-face {
+  src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+  font-family: "Outfit";
+}
+@font-face {
+  src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+html {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* FONT & COLOR */
+
+*::marker {
+  color: var(--Rose-800);
+}
+
+body {
+  font-family: "Outfit";
+  margin: 0;
+}
+
+h1,
+h3 {
+  font-family: "Young Serif";
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--Stone-900);
+  line-height: 1;
+}
+
+p {
+  color: var(--Stone-600);
+  line-height: 1.5;
+}
+
+.preparation-details {
+  background: var(--Rose-50);
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: var(--Rose-800);
+}
+
+ul {
+  color: var(--Stone-600);
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.7rem;
+  color: var(--Rose-800);
+}
+
+ol li::marker {
+  font-weight: bold;
+}
+
+ol li {
+  line-height: 1.5;
+}
+
+/* IMAGE */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* LAYOUT */
+
+article {
+  padding: 2.5rem;
+  padding-top: 1rem;
+}
+
+.preparation-details {
+  padding: 10px 0 10px 30px;
+  border-radius: 15px;
+  margin: 40px 0;
+}
+
+.preparation-details ul {
+  padding-left: 20px;
+}
+
+.preparation-details ul :first-of-type,
+.preparation-details ul :nth-of-type(2) {
+  padding-bottom: 10px;
+}
+
+.preparation-details li {
+  padding-left: 20px;
+}
+
+.preparation-details li::marker {
+  padding-right: 10px;
+}
+
+.ingredient-list li {
+  padding-bottom: 10px;
+}
+
+.ingredient-list li:last-of-type {
+  padding-bottom: 0;
+}
+
+.ingredient-list li {
+  padding-left: 20px;
+}
+
+ol,
+.ingredient-list {
+  border-bottom: 1px solid var(--Stone-150);
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+ol li {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+ol li:last-of-type {
+  padding-bottom: 0;
+}
+
+.nutrition-values {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 20px;
+  grid-template-rows: repeat(4, 1fr);
+  margin-bottom: 50px;
+}
+
+.nutrition-values span {
+  border-bottom: 1px solid var(--Stone-150);
+  padding: 10px 0 10px 20px;
+}
+.nutrition-values span:last-of-type,
+.nutrition-values span:nth-of-type(7) {
+  border-bottom: 0;
+}
+
+h3 {
+  margin: 20px 0;
+}
