@@ -163,3 +163,39 @@ ol li:last-of-type {
 h3 {
   margin: 20px 0;
 }
+
+.attribution {
+  padding-bottom: 30px;
+}
+
+@media (min-width: 1440px) {
+  section {
+    width: 700px;
+    margin: 100px auto;
+    background: var(--White);
+    padding: 2.5rem;
+    border-radius: 20px;
+  }
+
+  img {
+    border-radius: 15px;
+  }
+  article {
+    padding: 0;
+  }
+
+  body {
+    background: var(--Stone-150);
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+
+  p,
+  li,
+  span {
+    font-size: 0.95rem;
+  }
+}
