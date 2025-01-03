@@ -147,7 +147,6 @@ ol li:last-of-type {
 .nutrition-values {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-left: 20px;
   grid-template-rows: repeat(4, 1fr);
   margin-bottom: 50px;
 }
