@@ -87,6 +87,13 @@ img {
 
 /* LAYOUT */
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 article {
   padding: 2.5rem;
   padding-top: 1rem;
@@ -167,7 +174,7 @@ h3 {
   padding-bottom: 30px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   section {
     width: 700px;
     margin: 100px auto;
